@@ -109,8 +109,7 @@ class NeuralNetFactory:
 
     def conv_net_max_pool(self, learning_rate=0.001):
         model = Sequential([
-            TimeDistributed(
-                Conv2D(filters=32, kernel_size=(3, 3), activation='relu', padding='same', input_shape=(7, 32, 32, 3))),
+            TimeDistributed(Conv2D(filters=32, kernel_size=(3, 3), activation='relu', padding='same', input_shape=(7, 32, 32, 3))),
             TimeDistributed(Conv2D(filters=32, kernel_size=(3, 3), activation='relu', padding='same')),
             TimeDistributed(Conv2D(filters=32, kernel_size=(3, 3), activation='relu', padding='same')),
             TimeDistributed(Conv2D(filters=32, kernel_size=(3, 3), activation='relu', padding='same')),
@@ -136,8 +135,7 @@ class NeuralNetFactory:
 
     def conv_net_1d_conv(self, learning_rate=0.001):
         model = Sequential([
-            TimeDistributed(
-                Conv2D(filters=32, kernel_size=(3, 3), activation='relu', padding='same', input_shape=(7, 32, 32, 3))),
+            TimeDistributed(Conv2D(filters=32, kernel_size=(3, 3), activation='relu', padding='same', input_shape=(7, 32, 32, 3))),
             TimeDistributed(Conv2D(filters=32, kernel_size=(3, 3), activation='relu', padding='same')),
             TimeDistributed(Conv2D(filters=32, kernel_size=(3, 3), activation='relu', padding='same')),
             TimeDistributed(Conv2D(filters=32, kernel_size=(3, 3), activation='relu', padding='same')),
@@ -163,8 +161,7 @@ class NeuralNetFactory:
 
     def conv_net_lstm(self, learning_rate=0.001):
         model = Sequential([
-            TimeDistributed(
-                Conv2D(filters=32, kernel_size=(3, 3), activation='relu', padding='same', input_shape=(7, 32, 32, 3))),
+            TimeDistributed(Conv2D(filters=32, kernel_size=(3, 3), activation='relu', padding='same', input_shape=(7, 32, 32, 3))),
             TimeDistributed(Conv2D(filters=32, kernel_size=(3, 3), activation='relu', padding='same')),
             TimeDistributed(Conv2D(filters=32, kernel_size=(3, 3), activation='relu', padding='same')),
             TimeDistributed(Conv2D(filters=32, kernel_size=(3, 3), activation='relu', padding='same')),
